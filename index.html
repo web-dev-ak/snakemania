@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8; width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <title>Snake Mania</title>
+</head>
+<body>
+    <div id="score-box" class="body-boxes">
+        <span class="score-box-items">SCORE: <span id="score">000</span></span>
+        <div id="score-box-restart-btn" class="score-box-items">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M11 1H9v2h2v2H5v2H3v10h2v2h2v-2H5V7h6v2H9v2h2V9h2V7h2V5h-2V3h-2V1zm8 4h-2v2h2v10h-6v-2h2v-2h-2v2h-2v2H9v2h2v2h2v2h2v-2h-2v-2h6v-2h2V7h-2V5z" fill="currentColor"/> </svg>
+        </div>
+        <span class="score-box-items">TIME: <span id="time">00:00</span></span>
+    </div>
+    <div id="game-box" class="body-boxes">
+        <div id="sprite" class="entities"></div>
+        <div id="food" class="entities"></div>
+    </div>
+    <div id="controls-box" class="body-boxes">
+        <div id="btn-left" class="control-buttons">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M7 16H5v-2h2v-2h2v-2h2V8h2v2h2v2h2v2h2v2h-2v-2h-2v-2h-2v-2h-2v2H9v2H7v2z" fill="currentColor"/> </svg>
+        </div>
+        <div id="btn-up" class="control-buttons">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M7 16H5v-2h2v-2h2v-2h2V8h2v2h2v2h2v2h2v2h-2v-2h-2v-2h-2v-2h-2v2H9v2H7v2z" fill="currentColor"/> </svg>
+        </div>
+        <div id="btn-right" class="control-buttons">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M7 16H5v-2h2v-2h2v-2h2V8h2v2h2v2h2v2h2v2h-2v-2h-2v-2h-2v-2h-2v2H9v2H7v2z" fill="currentColor"/> </svg>
+        </div>
+        <div id="btn-down" class="control-buttons">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M7 16H5v-2h2v-2h2v-2h2V8h2v2h2v2h2v2h2v2h-2v-2h-2v-2h-2v-2h-2v2H9v2H7v2z" fill="currentColor"/> </svg>
+        </div>
+    </div>
+    <div id="game-start-btn-box" style="display: block;">
+        <div id="game-start-btn">
+            <span>CLICK HERE TO START</span>
+        </div>
+    </div>
+    <div id="game-over-end-screen" style="display: none;">
+        <div class="game-over-msg-box">
+            <span class="game-over-title">GAME OVER</span>
+            <div class="game-over-score-box">
+                <span id="game-over-final-score" class="game-over-score">000</span>
+                <span class="game-over-score-title">YOUR SCORE</span>             
+            </div>
+            <div id="game-over-restart-btn" class="score-box-items">
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M11 1H9v2h2v2H5v2H3v10h2v2h2v-2H5V7h6v2H9v2h2V9h2V7h2V5h-2V3h-2V1zm8 4h-2v2h2v10h-6v-2h2v-2h-2v2h-2v2H9v2h2v2h2v2h2v-2h-2v-2h6v-2h2V7h-2V5z" fill="currentColor"/> </svg>
+                <span>RESTART</span>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
